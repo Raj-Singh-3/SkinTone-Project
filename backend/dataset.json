@@ -1,0 +1,307 @@
+[
+  {
+    "skinColor": "rgb(255, 236, 214)",
+    "undertone": "warm",
+    "recommendedColors": ["Peach", "Cream", "Light Coral", "Butter Yellow", "Soft Apricot"]
+  },
+  {
+    "skinColor": "rgb(255, 227, 200)",
+    "undertone": "warm",
+    "recommendedColors": ["Blush Pink", "Mint Green", "Lavender", "Powder Blue", "Warm Beige"]
+  },
+  {
+    "skinColor": "rgb(255, 218, 185)",
+    "undertone": "neutral",
+    "recommendedColors": ["Dusty Rose", "Sage Green", "Taupe", "Mauve", "Soft Teal"]
+  },
+  {
+    "skinColor": "rgb(255, 209, 171)",
+    "undertone": "warm",
+    "recommendedColors": ["Terracotta", "Olive Green", "Golden Yellow", "Rust", "Camel"]
+  },
+  {
+    "skinColor": "rgb(255, 200, 157)",
+    "undertone": "warm",
+    "recommendedColors": ["Salmon", "Turquoise", "Champagne", "Coral", "Warm Gray"]
+  },
+  {
+    "skinColor": "rgb(255, 191, 143)",
+    "undertone": "neutral",
+    "recommendedColors": ["Periwinkle", "Dusty Blue", "Rose Brown", "Muted Lilac", "Sand"]
+  },
+  {
+    "skinColor": "rgb(255, 182, 129)",
+    "undertone": "warm",
+    "recommendedColors": ["Burnt Orange", "Forest Green", "Mustard", "Copper", "Cinnamon"]
+  },
+  {
+    "skinColor": "rgb(255, 173, 115)",
+    "undertone": "warm",
+    "recommendedColors": ["Tomato Red", "Emerald", "Gold", "Deep Peach", "Cognac"]
+  },
+  {
+    "skinColor": "rgb(255, 164, 101)",
+    "undertone": "neutral",
+    "recommendedColors": ["Slate Blue", "Muted Purple", "Charcoal", "Dove Gray", "Soft Fuchsia"]
+  },
+  {
+    "skinColor": "rgb(255, 155, 87)",
+    "undertone": "warm",
+    "recommendedColors": ["Brick Red", "Hunter Green", "Amber", "Spice", "Toffee"]
+  },
+
+  {
+    "skinColor": "rgb(241, 194, 125)",
+    "undertone": "warm",
+    "recommendedColors": ["Coral", "Olive", "Peach", "Cream", "Warm Red"]
+  },
+  {
+    "skinColor": "rgb(239, 184, 110)",
+    "undertone": "warm",
+    "recommendedColors": ["Teal", "Mustard", "Rust", "Camel", "Goldenrod"]
+  },
+  {
+    "skinColor": "rgb(237, 174, 95)",
+    "undertone": "neutral",
+    "recommendedColors": ["Navy", "Burgundy", "Sage", "Mauve", "Taupe"]
+  },
+  {
+    "skinColor": "rgb(235, 164, 80)",
+    "undertone": "warm",
+    "recommendedColors": ["Burnt Sienna", "Emerald", "Copper", "Spice", "Terracotta"]
+  },
+  {
+    "skinColor": "rgb(233, 154, 65)",
+    "undertone": "warm",
+    "recommendedColors": ["Forest Green", "Amber", "Brick", "Khaki", "Warm Brown"]
+  },
+  {
+    "skinColor": "rgb(231, 144, 50)",
+    "undertone": "neutral",
+    "recommendedColors": ["Royal Blue", "Plum", "Slate", "Dusty Pink", "Muted Yellow"]
+  },
+  {
+    "skinColor": "rgb(229, 134, 35)",
+    "undertone": "warm",
+    "recommendedColors": ["Deep Orange", "Army Green", "Gold", "Cinnamon", "Pumpkin"]
+  },
+  {
+    "skinColor": "rgb(227, 124, 20)",
+    "undertone": "warm",
+    "recommendedColors": ["Cranberry", "Olive Drab", "Bronze", "Russet", "Honey"]
+  },
+  {
+    "skinColor": "rgb(225, 114, 5)",
+    "undertone": "neutral",
+    "recommendedColors": ["Eggplant", "Steel Blue", "Graphite", "Muted Coral", "Oatmeal"]
+  },
+  {
+    "skinColor": "rgb(223, 104, 0)",
+    "undertone": "warm",
+    "recommendedColors": ["Scarlet", "Dark Teal", "Amber", "Chestnut", "Paprika"]
+  },
+
+  {
+    "skinColor": "rgb(198, 134, 66)",
+    "undertone": "neutral",
+    "recommendedColors": ["Navy", "Teal", "Burgundy", "Gray", "Dusty Purple"]
+  },
+  {
+    "skinColor": "rgb(193, 124, 56)",
+    "undertone": "warm",
+    "recommendedColors": ["Rust", "Sage", "Gold", "Terracotta", "Warm White"]
+  },
+  {
+    "skinColor": "rgb(188, 114, 46)",
+    "undertone": "neutral",
+    "recommendedColors": ["Jewel Blue", "Mauve", "Charcoal", "Moss Green", "Taupe"]
+  },
+  {
+    "skinColor": "rgb(183, 104, 36)",
+    "undertone": "warm",
+    "recommendedColors": ["Burnt Orange", "Forest Green", "Camel", "Spice", "Copper"]
+  },
+  {
+    "skinColor": "rgb(178, 94, 26)",
+    "undertone": "neutral",
+    "recommendedColors": ["Deep Purple", "Slate Gray", "Dusty Rose", "Olive", "Muted Pink"]
+  },
+  {
+    "skinColor": "rgb(173, 84, 16)",
+    "undertone": "warm",
+    "recommendedColors": ["Brick Red", "Mustard", "Deep Teal", "Amber", "Cinnamon"]
+  },
+  {
+    "skinColor": "rgb(168, 74, 6)",
+    "undertone": "warm",
+    "recommendedColors": ["Cranberry", "Army Green", "Gold", "Russet", "Pumpkin"]
+  },
+  {
+    "skinColor": "rgb(163, 64, 0)",
+    "undertone": "neutral",
+    "recommendedColors": ["Eggplant", "Steel Blue", "Graphite", "Muted Coral", "Oatmeal"]
+  },
+  {
+    "skinColor": "rgb(158, 54, 0)",
+    "undertone": "warm",
+    "recommendedColors": ["Scarlet", "Dark Teal", "Amber", "Chestnut", "Paprika"]
+  },
+  {
+    "skinColor": "rgb(153, 44, 0)",
+    "undertone": "neutral",
+    "recommendedColors": ["Deep Plum", "Ice Blue", "Silver", "Blush", "Stone"]
+  },
+
+  {
+    "skinColor": "rgb(141, 85, 36)",
+    "undertone": "cool",
+    "recommendedColors": ["Lavender", "Sapphire", "Soft Blue", "Rose", "Mint"]
+  },
+  {
+    "skinColor": "rgb(136, 75, 31)",
+    "undertone": "neutral",
+    "recommendedColors": ["Emerald", "Ruby", "Gold", "Taupe", "Dusty Pink"]
+  },
+  {
+    "skinColor": "rgb(131, 65, 26)",
+    "undertone": "warm",
+    "recommendedColors": ["Turquoise", "Coral", "Olive", "Cream", "Warm Red"]
+  },
+  {
+    "skinColor": "rgb(126, 55, 21)",
+    "undertone": "cool",
+    "recommendedColors": ["Periwinkle", "Lilac", "Powder Blue", "Silver", "Pale Yellow"]
+  },
+  {
+    "skinColor": "rgb(121, 45, 16)",
+    "undertone": "neutral",
+    "recommendedColors": ["Burgundy", "Navy", "Sage", "Mauve", "Charcoal"]
+  },
+  {
+    "skinColor": "rgb(116, 35, 11)",
+    "undertone": "warm",
+    "recommendedColors": ["Teal", "Mustard", "Rust", "Camel", "Goldenrod"]
+  },
+  {
+    "skinColor": "rgb(111, 25, 6)",
+    "undertone": "cool",
+    "recommendedColors": ["Ice Blue", "Lavender Gray", "Pale Pink", "Mint", "Soft Peach"]
+  },
+  {
+    "skinColor": "rgb(106, 15, 1)",
+    "undertone": "neutral",
+    "recommendedColors": ["Deep Green", "Wine", "Slate", "Dusty Purple", "Oatmeal"]
+  },
+  {
+    "skinColor": "rgb(101, 5, 0)",
+    "undertone": "warm",
+    "recommendedColors": ["Burnt Sienna", "Emerald", "Copper", "Spice", "Terracotta"]
+  },
+  {
+    "skinColor": "rgb(96, 0, 0)",
+    "undertone": "cool",
+    "recommendedColors": ["Baby Blue", "Lavender", "Rose Quartz", "Seafoam", "Pearl"]
+  },
+
+  {
+    "skinColor": "rgb(96, 48, 36)",
+    "undertone": "warm",
+    "recommendedColors": ["Gold", "Turquoise", "Coral", "Cream", "Warm White"]
+  },
+  {
+    "skinColor": "rgb(91, 43, 31)",
+    "undertone": "neutral",
+    "recommendedColors": ["Royal Blue", "Plum", "Silver", "Dusty Pink", "Muted Yellow"]
+  },
+  {
+    "skinColor": "rgb(86, 38, 26)",
+    "undertone": "cool",
+    "recommendedColors": ["Icy Blue", "Lilac", "Soft Pink", "Mint", "Pearl Gray"]
+  },
+  {
+    "skinColor": "rgb(81, 33, 21)",
+    "undertone": "warm",
+    "recommendedColors": ["Deep Orange", "Emerald", "Gold", "Cinnamon", "Warm Beige"]
+  },
+  {
+    "skinColor": "rgb(76, 28, 16)",
+    "undertone": "neutral",
+    "recommendedColors": ["Deep Purple", "Teal", "Charcoal", "Blush", "Stone"]
+  },
+  {
+    "skinColor": "rgb(71, 23, 11)",
+    "undertone": "cool",
+    "recommendedColors": ["Pastel Blue", "Lavender", "Rose", "Seafoam", "Silver"]
+  },
+  {
+    "skinColor": "rgb(66, 18, 6)",
+    "undertone": "warm",
+    "recommendedColors": ["Scarlet", "Olive", "Amber", "Chestnut", "Warm Gray"]
+  },
+  {
+    "skinColor": "rgb(61, 13, 1)",
+    "undertone": "neutral",
+    "recommendedColors": ["Navy", "Burgundy", "Sage", "Taupe", "Mauve"]
+  },
+  {
+    "skinColor": "rgb(56, 8, 0)",
+    "undertone": "cool",
+    "recommendedColors": ["Powder Blue", "Lavender", "Soft Peach", "Mint", "Pearl"]
+  },
+  {
+    "skinColor": "rgb(51, 3, 0)",
+    "undertone": "warm",
+    "recommendedColors": ["Golden Yellow", "Turquoise", "Coral", "Cream", "Warm White"]
+  },
+
+  {
+    "skinColor": "rgb(72, 36, 36)",
+    "undertone": "neutral",
+    "recommendedColors": ["Jewel Blue", "Ruby", "Emerald", "Gold", "Ivory"]
+  },
+  {
+    "skinColor": "rgb(67, 31, 31)",
+    "undertone": "cool",
+    "recommendedColors": ["Sapphire", "Amethyst", "Silver", "Rose", "Lilac"]
+  },
+  {
+    "skinColor": "rgb(62, 26, 26)",
+    "undertone": "warm",
+    "recommendedColors": ["Topaz", "Garnet", "Bronze", "Cream", "Warm Peach"]
+  },
+  {
+    "skinColor": "rgb(57, 21, 21)",
+    "undertone": "neutral",
+    "recommendedColors": ["Deep Teal", "Wine", "Slate", "Dusty Rose", "Oatmeal"]
+  },
+  {
+    "skinColor": "rgb(52, 16, 16)",
+    "undertone": "cool",
+    "recommendedColors": ["Ice Blue", "Lavender Gray", "Pale Pink", "Mint", "Pearl"]
+  },
+  {
+    "skinColor": "rgb(47, 11, 11)",
+    "undertone": "warm",
+    "recommendedColors": ["Burnt Orange", "Turquoise", "Gold", "Camel", "Warm White"]
+  },
+  {
+    "skinColor": "rgb(42, 6, 6)",
+    "undertone": "neutral",
+    "recommendedColors": ["Royal Purple", "Steel Blue", "Graphite", "Blush", "Stone"]
+  },
+  {
+    "skinColor": "rgb(37, 1, 1)",
+    "undertone": "cool",
+    "recommendedColors": ["Pastel Blue", "Lavender", "Rose Quartz", "Seafoam", "Silver"]
+  },
+  {
+    "skinColor": "rgb(32, 0, 0)",
+    "undertone": "warm",
+    "recommendedColors": ["Golden Yellow", "Emerald", "Coral", "Ivory", "Warm Peach"]
+  },
+  {
+    "skinColor": "rgb(27, 0, 0)",
+    "undertone": "neutral",
+    "recommendedColors": ["Deep Plum", "Navy", "Charcoal", "Dusty Pink", "Oatmeal"]
+  }
+]
