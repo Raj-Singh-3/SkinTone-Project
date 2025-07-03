@@ -62,7 +62,7 @@ function ImageUpload({ setResult, setIsLoading, setError }) {
     try {
       setIsLoading(true);
       setError(null);
-      const res = await axios.post('http://localhost:5000/upload', formData, {
+      const res = await axios.post('http://localhost:5050/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

@@ -1,6 +1,181 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+// Hardcoded products
+const products = [
+  // Existing entries (lighter skin tone)
+  { name: 'Coral crop-top', tag: 'coral-female-top', gender: 'female', color: 'coral', type: 'top' },
+  { name: 'Salmon shirt', tag: 'salmon-male-top', gender: 'male', color: 'salmon', type: 'top' },
+  { name: 'Turquoise blouse', tag: 'turquoise-female-top', gender: 'female', color: 'turquoise', type: 'top' },
+  { name: 'Champagne shirt', tag: 'champagne-male-top', gender: 'male', color: 'champagne', type: 'top' },
+  { name: 'Warm Gray tee', tag: 'warmgray-male-top', gender: 'male', color: 'warm gray', type: 'top' },
+  { name: 'Coral shirt', tag: 'coral-male-top', gender: 'male', color: 'coral', type: 'top' },
+  { name: 'Salmon blouse', tag: 'salmon-female-top', gender: 'female', color: 'salmon', type: 'top' },
+  { name: 'Turquoise shirt', tag: 'turquoise-male-top', gender: 'male', color: 'turquoise', type: 'top' },
+  { name: 'Champagne blouse', tag: 'champagne-female-top', gender: 'female', color: 'champagne', type: 'top' },
+  { name: 'Warm Gray top', tag: 'warmgray-female-top', gender: 'female', color: 'warm gray', type: 'top' },
+
+  // New entries for skin tone rgb(166, 84, 0)
+  { name: 'Cranberry blouse', tag: 'cranberry-female-top', gender: 'female', color: 'cranberry', type: 'top' },
+  { name: 'Cranberry shirt', tag: 'cranberry-male-top', gender: 'male', color: 'cranberry', type: 'top' },
+  { name: 'Army Green blouse', tag: 'armygreen-female-top', gender: 'female', color: 'army green', type: 'top' },
+  { name: 'Army Green tee', tag: 'armygreen-male-top', gender: 'male', color: 'army green', type: 'top' },
+  { name: 'Gold top', tag: 'gold-female-top', gender: 'female', color: 'gold', type: 'top' },
+  { name: 'Gold shirt', tag: 'gold-male-top', gender: 'male', color: 'gold', type: 'top' },
+  { name: 'Russet blouse', tag: 'russet-female-top', gender: 'female', color: 'russet', type: 'top' },
+  { name: 'Russet shirt', tag: 'russet-male-top', gender: 'male', color: 'russet', type: 'top' },
+  { name: 'Pumpkin top', tag: 'pumpkin-female-top', gender: 'female', color: 'pumpkin', type: 'top' },
+  { name: 'Pumpkin tee', tag: 'pumpkin-male-top', gender: 'male', color: 'pumpkin', type: 'top' },
+];
+
+
+// Recommendation mapping
+const recommendationMap = {
+  female: {
+    salmon: {
+      jeans: 'High-waist white or cream trousers',
+      shoes: 'Nude heels or white sneakers',
+      accessories: ['Rose gold earrings', 'Light pink handbag']
+    },
+    turquoise: {
+      jeans: 'Light wash skinny jeans',
+      shoes: 'Silver sandals',
+      accessories: ['Turquoise studs', 'White clutch']
+    },
+    champagne: {
+      jeans: 'Beige palazzo pants',
+      shoes: 'Champagne ballet flats',
+      accessories: ['Pearl necklace', 'Gold bracelet']
+    },
+    coral: {
+      jeans: 'White denim shorts',
+      shoes: 'Tan wedges',
+      accessories: ['Coral scarf', 'Beige tote']
+    },
+    'warm gray': {
+      jeans: 'Black skinny jeans',
+      shoes: 'Gray ankle boots',
+      accessories: ['Silver hoops', 'Charcoal crossbody']
+    }
+  },
+  male: {
+    salmon: {
+      jeans: 'Slim-fit beige chinos',
+      shoes: 'Brown loafers or white sneakers',
+      accessories: ['Tan leather belt', 'Silver watch']
+    },
+    turquoise: {
+      jeans: 'Dark blue jeans',
+      shoes: 'White sneakers',
+      accessories: ['Turquoise tie', 'Navy cap']
+    },
+    champagne: {
+      jeans: 'Khaki trousers',
+      shoes: 'Champagne loafers',
+      accessories: ['Gold cufflinks', 'Beige wallet']
+    },
+    coral: {
+      jeans: 'Light gray jeans',
+      shoes: 'White slip-ons',
+      accessories: ['Coral pocket square', 'Tan backpack']
+    },
+    'warm gray': {
+      jeans: 'Charcoal joggers',
+      shoes: 'Gray sneakers',
+      accessories: ['Black beanie', 'Gray messenger bag']
+    }
+  }
+};
+
+const recommendationsByColorAndGender = {
+  "cranberry": {
+    "male": {
+      watch: "Maroon leather strap with rose gold dial",
+      shoes: "Burgundy suede loafers",
+      bag: "Dark red leather sling bag",
+      bracelet: "Matte black and red stone beads"
+    },
+    "female": {
+      earrings: "Garnet or ruby stud earrings",
+      shoes: "Cranberry block heels or ballet flats",
+      bag: "Quilted maroon shoulder bag",
+      necklace: "Minimal gold chain with red gemstone pendant"
+    }
+  },
+  "army green": {
+    "male": {
+      watch: "Military green canvas strap with black dial",
+      shoes: "Army green combat boots or casual sneakers",
+      bag: "Olive green duffel or backpack",
+      sunglasses: "Black/gunmetal frame with olive green tint"
+    },
+    "female": {
+      shoes: "Olive ankle boots or slip-on sandals",
+      bag: "Crossbody bag in matte olive",
+      earrings: "Geometric bronze or moss green stones",
+      bracelet: "Earth-toned bangles or leather wrap"
+    }
+  },
+  "gold": {
+    "male": {
+      watch: "Classic gold metal strap or black with gold accents",
+      shoes: "Black leather with subtle gold detail",
+      sunglasses: "Gold-rimmed aviators",
+      ring: "Signet ring with a brushed gold finish"
+    },
+    "female": {
+      earrings: "Hoop or drop gold earrings",
+      shoes: "Gold shimmer heels or sandals",
+      bag: "Champagne-gold clutch or mini bag",
+      necklace: "Bold statement gold necklace"
+    }
+  },
+  "russet": {
+    "male": {
+      watch: "Rust brown leather strap with bronze case",
+      shoes: "Russet-toned boots or leather brogues",
+      bag: "Chestnut brown satchel",
+      bracelet: "Wooden beads with russet hues"
+    },
+    "female": {
+      shoes: "Russet leather mules or boots",
+      bag: "Saddlebag in rust leather",
+      earrings: "Terracotta or copper danglers",
+      scarf: "Printed silk scarf with russet and beige tones"
+    }
+  },
+  "pumpkin": {
+    "male": {
+      watch: "Orange-accented sports watch",
+      shoes: "Tan-brown loafers or pumpkin-colored trainers",
+      cap: "Light orange or neutral baseball cap",
+      bracelet: "Rope band with orange detail"
+    },
+    "female": {
+      shoes: "Pumpkin-orange espadrilles or sandals",
+      bag: "Orange tote or bucket bag",
+      earrings: "Orange resin earrings or enamel studs",
+      hairband: "Satin pumpkin-colored knotted band"
+    }
+  }
+};
+
+
+function getRecommendations(color, gender) {
+  const colorKey = color.toLowerCase().replace(/\s/g, '');
+  // Normalize color keys for mapping
+  const colorMap = {
+    'salmon': 'salmon',
+    'turquoise': 'turquoise',
+    'champagne': 'champagne',
+    'coral': 'coral',
+    'warmgray': 'warm gray',
+    'warm gray': 'warm gray',
+  };
+  const mappedColor = colorMap[colorKey] || colorKey;
+  return (recommendationMap[gender] && recommendationMap[gender][mappedColor]) || null;
+}
+
 const palette = [
   // Light tones (1-50)
   'rgb(255, 236, 214)', 'rgb(255, 227, 200)', 'rgb(255, 218, 185)', 
@@ -151,71 +326,7 @@ const palette = [
 // 50 dark tones
 // 50+ very dark/rich tones
 
-// function ColorPalette({ setResult }) {
-//   const [selected, setSelected] = useState('');
-
-//   const handleSubmit = async () => {
-//     const res = await axios.post('http://localhost:5000/palette', {
-//       skinColor: selected
-//     });
-//     setResult(res.data);
-//   };
-
-//   return (
-//     <div>
-//       <h3>Or Select from Palette</h3>
-//       <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-//         {palette.map((color, index) => (
-//           <div
-//             key={index}
-//             onClick={() => setSelected(color)}
-//             style={{
-//               backgroundColor: color,
-//               width: '50px',
-//               height: '50px',
-//               border: selected === color ? '3px solid black' : '1px solid gray',
-//               cursor: 'pointer'
-//             }}
-//           />
-//         ))}
-//       </div>
-//       <button onClick={handleSubmit} style={{ marginTop: '10px' }}>
-//         Submit
-//       </button>
-//     </div>
-//   );
-// }
-
-// export default ColorPalette;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function ColorPalette({ setResult, setIsLoading, setError }) {
+function ColorPalette({ setResult, setIsLoading, setError, gender, setGender }) {
   const [selected, setSelected] = useState(null);
 
   const handleSubmit = async () => {
@@ -223,11 +334,10 @@ function ColorPalette({ setResult, setIsLoading, setError }) {
       setError('Please select a skin tone from the palette');
       return;
     }
-
+    setIsLoading(true);
+    setError(null);
     try {
-      setIsLoading(true);
-      setError(null);
-      const res = await axios.post('http://localhost:5000/palette', {
+      const res = await axios.post('http://localhost:5050/palette', {
         skinColor: selected
       });
       setResult(res.data);
